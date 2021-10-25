@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/Nunito Sans.ttf')  format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iceland';
+    src: url('../fonts/Iceland.ttf')  format('truetype');
+    font-display: swap;
+}
