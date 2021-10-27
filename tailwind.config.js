@@ -7,7 +7,7 @@ module.exports = {
         './*.html'
     ],
     safelist: [
-      'dropdown-active',
+      
     ]
   },
   darkMode: false, // or 'media' or 'class'

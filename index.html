@@ -12,6 +12,7 @@
     <link rel="preload" href="./assets/css/main.css" as="style">
     <link rel="preload" href="./assets/icons/uicons-solid-rounded.css" as="style">
     <link rel="preload" href="./assets/icons/all.min.css" as="style">
+    <link rel="preload" href="./assets/js/main.js" as="script">
 
     <!-- Essential stylesheets -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -20,137 +21,138 @@
 </head>
 <body class="tracking-wide font-nunitoSans antialiased break-words">
     
-    <!-- Site Container -->
-    <div class="sm:grid md:grid-cols-12">
+    <header class="bg-gray-900 text-gray-100 sticky top-0 z-50 md:hidden">
 
-        <header class="bg-gray-900 text-gray-100 sticky top-0 z-50 md:col-span-4 lg:col-span-3">
+        <div class="relative">
 
-            <div class="relative">
+            <div class="flex items-center justify-between px-4 py-5 border-b border-gray-500">
 
-                <div class="flex items-center justify-between px-4 py-5 border-b border-gray-500 md:hidden">
+                <a href="index.html">
+                    Dashboard
+                </a>
 
-                    <a href="index.html">
-                        Dashboard
+                <div class="flex gap-8">
+
+                    <a class="search-toggle" href="javascript:void(0)" aria-label="Search bar toggle button">
+                        <i class="fr fi-rr-search"></i>
                     </a>
 
-                    <div class="flex gap-8">
-
-                        <a class="search-toggle" href="javascript:void(0)" aria-label="Search bar toggle button">
-                            <i class="fr fi-rr-search"></i>
-                        </a>
-
-                        <a class="nav-toggle" href="javascript:void(0)" aria-label="Nav toggle button">
-                            <i class="fr fi-rr-menu-burger"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="navbar absolute bg-gray-900 w-auto px-4 py-8 h-screen transform -translate-x-full md:translate-x-0 md:fixed md:w-4/12 lg:w-3/12 transition linear delay-75">
-
-                    <ul class="flex flex-col gap-2">
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 bg-gray-800 text-gray-100 rounded-md" href="index.html">
-                                <i class="fr fi-rr-home relative top-1"></i>
-                                My Account
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="fund-wallet.html">
-                                <i class="fr fi-rr-hand-holding-heart relative top-1"></i>
-                                Fund Wallet
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="transfer.html">
-                                <i class="fr fi-rr-paper-plane relative top-1"></i>
-                                Transfer
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="transactions.html">
-                                <i class="fr fi-rr-chart-histogram relative top-1"></i>
-                                Transactions
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="buy-airtime.html">
-                                <i class="fr fi-rr-phone-call relative top-1"></i>
-                                Buy Airtime
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="buy-data.html">
-                                <i class="fr fi-rr-wifi-alt relative top-1"></i>
-                                Buy Data
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="tv-subscription.html">
-                                <i class="fr fi-rr-screen relative top-1"></i>
-                                Cable Tv Subscription
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="electricity.html">
-                                <i class="fr fi-rr-bulb relative top-1"></i>
-                                Electricity Bill
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="exam-pin.html">
-                                <i class="fr fi-rr-bank relative top-1"></i>
-                                Exam Result Pins
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="airtime-2-cash.html">
-                                <i class="fr fi-rr-money relative top-1"></i>
-                                Airtime To Cash
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
-                                <i class="fr fi-rr-earnings relative top-1"></i>
-                                Referral
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
-                                <i class="fr fi-rr-settings relative top-1"></i>
-                                Settings
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
-                                <i class="fr fi-rr-sign-out relative top-1"></i>
-                                Logout
-                            </a>
-                        </li>
-
-                    </ul>
+                    <a class="nav-toggle" href="javascript:void(0)" aria-label="Nav toggle button">
+                        <i class="fr fi-rr-menu-burger"></i>
+                    </a>
 
                 </div>
 
             </div>
 
-        </header>
+            
+        </div>
 
-        <div class="bg-indigo-50 relative md:col-span-8 lg:col-span-9">
+    </header>
+    
+    <!-- Site Container -->
+    <div class="relative">
+
+        <div class="navbar fixed overflow-y-auto bottom-0 bg-gray-900 w-auto px-4 py-8 transform -translate-x-full md:translate-x-0 transition linear delay-75 z-30" role="navigation">
+
+            <ul class="flex flex-col gap-2">
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 bg-gray-800 text-gray-100 rounded-md" href="index.html">
+                        <i class="fr fi-rr-home relative top-1"></i>
+                        My Account
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="fund-wallet.html">
+                        <i class="fr fi-rr-hand-holding-heart relative top-1"></i>
+                        Fund Wallet
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="transfer.html">
+                        <i class="fr fi-rr-paper-plane relative top-1"></i>
+                        Transfer
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="transactions.html">
+                        <i class="fr fi-rr-chart-histogram relative top-1"></i>
+                        Transactions
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="buy-airtime.html">
+                        <i class="fr fi-rr-phone-call relative top-1"></i>
+                        Buy Airtime
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="buy-data.html">
+                        <i class="fr fi-rr-wifi-alt relative top-1"></i>
+                        Buy Data
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="tv-subscription.html">
+                        <i class="fr fi-rr-screen relative top-1"></i>
+                        Cable Tv Subscription
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="electricity.html">
+                        <i class="fr fi-rr-bulb relative top-1"></i>
+                        Electricity Bill
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="exam-pin.html">
+                        <i class="fr fi-rr-bank relative top-1"></i>
+                        Exam Result Pins
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="airtime-2-cash.html">
+                        <i class="fr fi-rr-money relative top-1"></i>
+                        Airtime To Cash
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
+                        <i class="fr fi-rr-earnings relative top-1"></i>
+                        Referral
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
+                        <i class="fr fi-rr-settings relative top-1"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
+                        <i class="fr fi-rr-sign-out relative top-1"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="content-container bg-indigo-50 z-10 w-100">
 
             <div class="search-bar-container hidden sm:block">
 
@@ -181,7 +183,7 @@
 
 
             <!-- Welcome text -->
-            <div class="bg-white px-4 py-2 md:px-8">
+            <div class="bg-white px-4 py-2">
                 <h1 class="text-2xl text-gray-600 font-bold">
                     Good afternoon, Wisdom
                 </h1>
@@ -192,7 +194,7 @@
 
 
             <!-- Main content -->
-            <main class="px-2 py-4 sm:px-4">
+            <main class="px-4 py-2">
 
                 <div class="grid md:grid-cols-1 gap-8 md:gap-5 lg:grid-cols-12">
 
@@ -557,6 +559,7 @@
     <link rel="stylesheet" href="./assets/icons/uicons-solid-rounded.css">
     <link rel="stylesheet" href="./assets/icons/all.min.css">
     <script src="./assets/js/main.js"></script>
+    
 
 </body>
 </html>
