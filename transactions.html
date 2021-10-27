@@ -50,7 +50,7 @@
     </header>
     
     <!-- Site Container -->
-    <div>
+    <div class="relative">
 
         <div class="navbar fixed overflow-y-auto bottom-0 bg-gray-900 w-auto px-4 py-8 transform -translate-x-full md:translate-x-0 transition linear delay-75 z-30" role="navigation">
 
@@ -78,6 +78,13 @@
                 </li>
 
                 <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="withdraw.html">
+                        <i class="fr fi-rr-credit-card relative top-1"></i>
+                        Withdrawal
+                    </a>
+                </li>
+
+                <li>
                     <a class="flex items-center gap-5 py-2 px-4 bg-gray-800 text-gray-100 rounded-md" href="transactions.html">
                         <i class="fr fi-rr-chart-histogram relative top-1"></i>
                         Transactions
@@ -85,16 +92,30 @@
                 </li>
 
                 <li>
-                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="buy-airtime.html">
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="top-up.html/#airtime">
                         <i class="fr fi-rr-phone-call relative top-1"></i>
                         Buy Airtime
                     </a>
                 </li>
 
                 <li>
-                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="buy-data.html">
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="printing.html/#recharge">
+                        <i class="fr fi-rr-print relative top-1"></i>
+                        Recharge Card Printing
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="top-up.html/#data">
                         <i class="fr fi-rr-wifi-alt relative top-1"></i>
                         Buy Data
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="printing.html/#data">
+                        <i class="fr fi-rr-print relative top-1"></i>
+                        Data Printing
                     </a>
                 </li>
                 
@@ -134,14 +155,21 @@
                 </li>
 
                 <li>
-                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="commision.html">
+                        <i class="fr fi-rr-hand-holding-heart relative top-1"></i>
+                        Commission
+                    </a>
+                </li>
+
+                <li>
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="settings.html">
                         <i class="fr fi-rr-settings relative top-1"></i>
                         Settings
                     </a>
                 </li>
 
                 <li>
-                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="logout.html">
                         <i class="fr fi-rr-sign-out relative top-1"></i>
                         Logout
                     </a>
@@ -193,7 +221,7 @@
 
 
             <!-- Main Content -->
-            <main class="px-4 py-4">
+            <main class="px-4 py-2">
 
 
                 <h2 class="text-3xl text-black">
@@ -222,6 +250,9 @@
                                 <th class="py-2 px-4">
                                     Status
                                 </th>
+                                <th class="py-2 px-4">
+                                    Actions
+                                </th>
                             </tr>
 
                         </thead>
@@ -244,6 +275,12 @@
                                 <td class="py-2 px-4 font-bold text-green-500">
                                     Successful
                                 </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
+                                </td>
                             </tr>
 
                             <tr class="border-b border-gray-400">
@@ -261,6 +298,12 @@
                                 </td>
                                 <td class="py-2 px-4 font-bold text-green-500">
                                     Successful
+                                </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
                                 </td>
                             </tr>
 
@@ -280,6 +323,12 @@
                                 <td class="py-2 px-4 font-bold text-red-500">
                                     Failed
                                 </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
+                                </td>
                             </tr>
 
                             <tr class="border-b border-gray-400">
@@ -297,6 +346,12 @@
                                 </td>
                                 <td class="py-2 px-4 font-bold text-yellow-400">
                                     Pending
+                                </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
                                 </td>
                             </tr>
 
@@ -316,6 +371,12 @@
                                 <td class="py-2 px-4 font-bold text-green-500">
                                     Successful
                                 </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
+                                </td>
                             </tr>
 
                             <tr class="border-b border-gray-400">
@@ -333,6 +394,12 @@
                                 </td>
                                 <td class="py-2 px-4 font-bold text-green-500">
                                     Successful
+                                </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
                                 </td>
                             </tr>
 
@@ -352,6 +419,12 @@
                                 <td class="py-2 px-4 font-bold text-red-500">
                                     Failed
                                 </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
+                                </td>
                             </tr>
 
                             <tr class="border-b border-gray-400">
@@ -369,6 +442,12 @@
                                 </td>
                                 <td class="py-2 px-4 font-bold text-yellow-400">
                                     Pending
+                                </td>
+                                <td class="py-2 px-4 font-bold text-white">
+                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
+                                        Actions
+                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
+                                    </a>
                                 </td>
                             </tr>
 
