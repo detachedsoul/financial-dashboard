@@ -13,6 +13,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      margin: {
+        'half-50': '25%',
+      },
       fontFamily: {
         iceland: [
           'Iceland',
