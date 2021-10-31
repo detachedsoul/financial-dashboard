@@ -566,6 +566,19 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+input,
+    button,
+    textarea {
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+input:not(input[type="checkbox"]),
+    textarea {
+  -webkit-appearance: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -731,6 +744,10 @@ video {
 
 .border-collapse {
   border-collapse: collapse;
+}
+
+.border-separate {
+  border-collapse: separate;
 }
 
 .transform {
@@ -999,11 +1016,6 @@ video {
   background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
 }
 
-.bg-indigo-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
-}
-
 .bg-indigo-600 {
   --tw-bg-opacity: 1;
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
@@ -1017,11 +1029,6 @@ video {
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
-}
-
-.hover\:bg-indigo-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 
 .hover\:bg-indigo-700:hover {
@@ -1517,6 +1524,11 @@ video {
     padding: 1.25rem;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1554,4 +1566,10 @@ video {
   .lg\:items-start {
     align-items: flex-start;
   }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
 }
