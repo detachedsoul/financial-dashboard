@@ -51,3 +51,16 @@ dropdownToggleBtn.addEventListener('click', () => {
     dropdownContainer.classList.toggle('hidden');
 
 });
+
+function showTransferModeFields () {
+
+    let selected = document.querySelector('.select-transfer-mode');
+    let targetField = document.getElementById(selected.value);
+
+    let options  = [...selected.options].map(option => {
+        let optionsList = document.getElementById(option.value);
+        optionsList.classList.replace('flex', 'hidden');
+        targetField.classList.replace('hidden', 'flex');
+    });
+
+}

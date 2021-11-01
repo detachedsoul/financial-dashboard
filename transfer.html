@@ -226,72 +226,120 @@
 
                                 <div>
 
-                                    <label class="block font-semibold mb-2" for="selectBank">
-                                        Select Bank
+                                    <label class="block font-semibold mb-2" for="selectTransferMode">
+                                        Select Transfer Method
                                     </label>
 
-                                    <select class="w-full transaction-input focus:outline-none border border-gray-300 py-1 px-4 rounded-md bg-indigo-200" id="selectBank" title="Select Bank">
-                                            
-                                        <option value="">
-                                            GTBank
+                                    <select class="select-transfer-mode w-full transaction-input focus:outline-none border border-gray-300 py-1 px-4 rounded-md bg-indigo-200" id="selectTransferMode" title="Select Transfer Method" onchange="showTransferModeFields()">
+                              
+                                        <option value="bankOption">
+                                            Bank
                                         </option>
 
-                                        <option value="">
-                                            UBA
-                                        </option>
-
-                                        <option value="">
-                                            Fidelity
-                                        </option>
-
-                                        <option value="">
-                                            FCMB
+                                        <option value="p2pOption">
+                                            Person 2 Person (P2P)
                                         </option>
 
                                     </select>
 
                                 </div>
 
-                                <div>
+                                <div class="flex-col gap-4 hidden" id="bankOption">
 
-                                    <label class="block font-semibold mb-2" for="accountType">
-                                        Account Type
-                                    </label>
-
-                                    <select class="w-full transaction-input focus:outline-none border border-gray-300 py-1 px-4 rounded-md bg-indigo-200" id="accountType" title="Select Account Type">
+                                    <div>
+    
+                                        <label class="block font-semibold mb-2" for="selectBank">
+                                            Select Bank
+                                        </label>
+    
+                                        <select class="w-full transaction-input focus:outline-none border border-gray-300 py-1 px-4 rounded-md bg-indigo-200" id="selectBank" title="Select Bank">
+                                                
+                                            <option value="">
+                                                GTBank
+                                            </option>
+    
+                                            <option value="">
+                                                UBA
+                                            </option>
+    
+                                            <option value="">
+                                                Fidelity
+                                            </option>
+    
+                                            <option value="">
+                                                FCMB
+                                            </option>
+    
+                                        </select>
+    
+                                    </div>
+    
+                                    <div>
+    
+                                        <label class="block font-semibold mb-2" for="accountType">
+                                            Account Type
+                                        </label>
+    
+                                        <select class="w-full transaction-input focus:outline-none border border-gray-300 py-1 px-4 rounded-md bg-indigo-200" id="accountType" title="Select Account Type">
+                                                
+                                            <option value="">
+                                                Savings
+                                            </option>
+    
+                                            <option value="">
+                                                Current
+                                            </option>
                                             
-                                        <option value="">
-                                            Savings
-                                        </option>
-
-                                        <option value="">
-                                            Current
-                                        </option>
+                                        </select>
+    
+                                    </div>
+    
+                                    <div>
                                         
-                                    </select>
+                                        <label class="block font-semibold mb-2" for="accountNumber">
+                                            Account Number
+                                        </label>
+                                        
+                                        <input class="transaction-input" type="number" name="accountNumber" placeholder="Enter recepient's account number" id="accountNumber" required minlength="1">
+    
+                                    </div>
+    
+                                    <div>
+                                        
+                                        <label class="block font-semibold mb-2" for="accountName">
+                                            Account Name
+                                        </label>
+                                        
+                                        <input class="transaction-input disabled-input" type="text" name="accountName" id="accountName" value="Michael" required disabled readonly>
+    
+                                    </div>
 
                                 </div>
 
-                                
-                                <div>
-                                    
-                                    <label class="block font-semibold mb-2" for="accountNumber">
-                                        Account Number
-                                    </label>
-                                    
-                                    <input class="transaction-input" type="number" name="accountNumber" placeholder="Enter recepient's account number" id="accountNumber" required minlength="1">
+                                <div class="flex-col gap-4 hidden" id="p2pOption">
+    
+                                    <div>
+                                        
+                                        <label class="block font-semibold mb-2" for="walletAddress">
+                                            Receiver's Wallet Address
+                                        </label>
+                                        
+                                        <input class="transaction-input" type="number" name="walletAddress" placeholder="Enter recepient's wallet address" id="walletAddress" required minlength="1">
+    
+                                    </div>
+    
+                                    <div>
+                                        
+                                        <label class="block font-semibold mb-2" for="receiverName">
+                                            Receiver's Name
+                                        </label>
+                                        
+                                        <input class="transaction-input disabled-input" type="text" name="receiverName" id="receiverName" value="Michael" required disabled readonly>
+    
+                                    </div>
 
                                 </div>
 
-                                <div>
-                                    
-                                    <label class="block font-semibold mb-2" for="accountName">
-                                        Account Name
-                                    </label>
-                                    
-                                    <input class="transaction-input disabled-input" type="text" name="accountName" id="accountName" value="Michael" required disabled readonly>
-
-                                </div>
 
                                 <div>
 
@@ -299,7 +347,7 @@
                                         Enter Amount
                                     </label>
 
-                                    <input class="transaction-input" type="number" name="transferAmount" placeholder="Enter ammount" id="transferAmount" required min="1">
+                                    <input class="transaction-input" type="number" name="transferAmount" placeholder="Enter amount" id="transferAmount" required min="1">
                                     
                                 </div>
 

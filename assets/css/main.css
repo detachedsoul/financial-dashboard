@@ -680,6 +680,10 @@ input[type="search"],
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -926,6 +930,10 @@ input[type="search"],
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -967,6 +975,16 @@ input[type="search"],
   border-color: rgba(107, 114, 128, var(--tw-border-opacity));
 }
 
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+}
+
+.border-green-500 {
+  --tw-border-opacity: 1;
+  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+}
+
 .border-indigo-200 {
   --tw-border-opacity: 1;
   border-color: rgba(199, 210, 254, var(--tw-border-opacity));
@@ -1002,6 +1020,11 @@ input[type="search"],
   background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
 }
 
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
@@ -1025,6 +1048,16 @@ input[type="search"],
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
 }
 
 .hover\:bg-indigo-700:hover {
@@ -1073,10 +1106,6 @@ input[type="search"],
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-2 {
@@ -1143,8 +1172,16 @@ input[type="search"],
   padding-top: 0px;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pb-2 {
@@ -1244,11 +1281,6 @@ input[type="search"],
   color: rgba(229, 231, 235, var(--tw-text-opacity));
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgba(209, 213, 219, var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
@@ -1307,6 +1339,11 @@ input[type="search"],
 .text-pink-600 {
   --tw-text-opacity: 1;
   color: rgba(219, 39, 119, var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .hover\:text-pink-700:hover {
