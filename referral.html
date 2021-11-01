@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fintech Dashboard Design">
     <meta name="author" content="Wisdom Ojimah">
-    <title>Logad | Transactions</title>
+    <title>Logad | Referrals</title>
 
     <!-- Preload stylesheets and scripts -->
     <link rel="preload" href="./assets/css/main.css" as="style">
@@ -85,7 +85,7 @@
                 </li>
 
                 <li>
-                    <a class="flex items-center gap-5 py-2 px-4 bg-gray-800 text-gray-100 rounded-md" href="transactions.html">
+                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="transactions.html">
                         <i class="fr fi-rr-chart-histogram relative top-1"></i>
                         Transactions
                     </a>
@@ -148,7 +148,7 @@
                 </li>
                 
                 <li>
-                    <a class="flex items-center gap-5 py-2 px-4 hover:bg-gray-800 text-gray-100 rounded-md" href="referral.html">
+                    <a class="flex items-center gap-5 py-2 px-4 bg-gray-800 text-gray-100 rounded-md" href="referral.html">
                         <i class="fr fi-rr-earnings relative top-1"></i>
                         Referral
                     </a>
@@ -214,7 +214,7 @@
 
 
                 <h2 class="text-3xl text-black">
-                    Transaction History
+                    Referrals History
                 </h2>
 
                 <div class="bg-white py-3 px-4 rounded-lg shadow-sm mt-4 overflow-x-auto">
@@ -223,24 +223,21 @@
                         
                         <thead class="text-left border-b border-gray-300">
                                 
-                            <tr class="text-sm">
-                                <th class="py-2 px-4">
-                                    ID
-                                </th>
-                                <th class="py-2 px-4">
-                                    Service
-                                </th>
-                                <th class="py-2 px-4">
-                                    Amount
-                                </th>
+                            <tr>
                                 <th class="py-2 px-4">
                                     Date
                                 </th>
                                 <th class="py-2 px-4">
-                                    Status
+                                    ID
                                 </th>
                                 <th class="py-2 px-4">
-                                    Actions
+                                    Name
+                                </th>
+                                <th class="py-2 px-4">
+                                    Level
+                                </th>
+                                <th class="py-2 px-4">
+                                    Commission
                                 </th>
                             </tr>
 
@@ -250,193 +247,37 @@
                                 
                             <tr class="border-b border-gray-300">
                                 <td class="py-2 px-4">
+                                    March 21, 2021
+                                </td>
+                                <td class="py-2 px-4">
                                     1
                                 </td>
                                 <td class="py-2 px-4">
-                                    Airtime (GLO)
+                                    Wisdom Ojimah
                                 </td>
                                 <td class="py-2 px-4">
-                                    ₦1000
-                                </td>
-                                <td class="py-2 px-4">
-                                    March 21, 2021
+                                    10
                                 </td>
                                 <td class="py-2 px-4 font-bold text-green-500">
-                                    Successful
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr class="border-b border-gray-300">
-                                <td class="py-2 px-4">
-                                    2
-                                </td>
-                                <td class="py-2 px-4">
-                                    DStv Cable Sub
-                                </td>
-                                <td class="py-2 px-4">
-                                    ₦2500
-                                </td>
-                                <td class="py-2 px-4">
-                                    March 25, 2021
-                                </td>
-                                <td class="py-2 px-4 font-bold text-green-500">
-                                    Successful
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr class="border-b border-gray-300">
-                                <td class="py-2 px-4">
-                                    3
-                                </td>
-                                <td class="py-2 px-4">
-                                    Airtime (GLO)
-                                </td>
-                                <td class="py-2 px-4">
-                                    ₦1000
-                                </td>
-                                <td class="py-2 px-4">
-                                    June 21, 2021
-                                </td>
-                                <td class="py-2 px-4 font-bold text-red-500">
-                                    Failed
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr class="border-b border-gray-300">
-                                <td class="py-2 px-4">
-                                    4
-                                </td>
-                                <td class="py-2 px-4">
-                                    MTN (GLO)
-                                </td>
-                                <td class="py-2 px-4">
-                                    ₦1000
-                                </td>
-                                <td class="py-2 px-4">
-                                    July 21, 2021
-                                </td>
-                                <td class="py-2 px-4 font-bold text-yellow-400">
-                                    Pending
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr class="border-b border-gray-300">
-                                <td class="py-2 px-4">
-                                    5
-                                </td>
-                                <td class="py-2 px-4">
-                                    Airtime (GLO)
-                                </td>
-                                <td class="py-2 px-4">
-                                    ₦1000
-                                </td>
-                                <td class="py-2 px-4">
-                                    August 21, 2021
-                                </td>
-                                <td class="py-2 px-4 font-bold text-green-500">
-                                    Successful
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr class="border-b border-gray-300">
-                                <td class="py-2 px-4">
-                                    6
-                                </td>
-                                <td class="py-2 px-4">
-                                    DStv Cable Sub
-                                </td>
-                                <td class="py-2 px-4">
-                                    ₦2500
-                                </td>
-                                <td class="py-2 px-4">
-                                    September 25, 2021
-                                </td>
-                                <td class="py-2 px-4 font-bold text-green-500">
-                                    Successful
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr class="border-b border-gray-300">
-                                <td class="py-2 px-4">
-                                    7
-                                </td>
-                                <td class="py-2 px-4">
-                                    Airtime (GLO)
-                                </td>
-                                <td class="py-2 px-4">
-                                    ₦1000
-                                </td>
-                                <td class="py-2 px-4">
-                                    October 21, 2021
-                                </td>
-                                <td class="py-2 px-4 font-bold text-red-500">
-                                    Failed
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
+                                    ₦700
                                 </td>
                             </tr>
 
                             <tr>
                                 <td class="py-2 px-4">
-                                    8
+                                    June 21, 2021
                                 </td>
                                 <td class="py-2 px-4">
-                                    MTN (GLO)
+                                    2
                                 </td>
                                 <td class="py-2 px-4">
-                                    ₦1000
+                                    Oluwaseun Micheal Oke
                                 </td>
                                 <td class="py-2 px-4">
-                                    November 21, 2021
+                                    30
                                 </td>
-                                <td class="py-2 px-4 font-bold text-yellow-400">
-                                    Pending
-                                </td>
-                                <td class="py-2 px-4 font-bold text-white">
-                                    <a class="flex items-center gap-2 rounded-md bg-indigo-600 hover:bg-indigo-700 p-2" href="">
-                                        Actions
-                                        <i class="fr fi-rr-caret-down relative top-0.5"></i>
-                                    </a>
+                                <td class="py-2 px-4 font-bold text-green-500">
+                                    ₦2500
                                 </td>
                             </tr>
 
