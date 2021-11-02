@@ -24,6 +24,10 @@ module.exports = {
           'Nunito Sans',
         ],
       },
+      // ringOpacity: ['checked'],
+      // ringOffset: ['checked'],
+      // ringColor: ['checked'],
+      // ring: ['checked'],
     },
   },
   variants: {
